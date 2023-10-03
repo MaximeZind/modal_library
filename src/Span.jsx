@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes, { oneOfType } from 'prop-types';
 import { useState } from 'react';
-import classes from '../styles/Span.module.css';
+import classes from './styles/Span.module.css';
 
 /**
  * Composant Span pour afficher du texte avec des styles personnalisables.
