@@ -9,20 +9,19 @@ The Modal component allows you to create customizable modal dialogs for your Rea
 - [eslint (**version 1.4.0 or higher**)](https://eslint.org/)
 - [vite (**version ^4.3.2 or higher**)](https://vitejs.dev/)
 - [react (**version ^18.2.0 or higher**)](https://react.dev/)
-- [react-router-dom (**version ^6.11.2 or higher**)](https://reactrouter.com/en/main)
 - [prop-types (**version ^15.8.1 or higher**)](https://www.npmjs.com/package/prop-types)
 
 ## Installation
 
 You can install this component via npm:
 
-`npm install date_picker`
+`npm install maximez_modal`
 
 ## Usage
 
 # Import the component
 
-`import { Modal } from 'your-modal-component';`
+`import { Modal } from 'maximez_modal';`
 
 # Include the Modal componentn in your JSX
 
