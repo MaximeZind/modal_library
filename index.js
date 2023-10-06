@@ -1,3 +1,3 @@
-import Modal from './src/Modal';
+import Modal from './src/lib/Modal';
 
 module.exports = {Modal};

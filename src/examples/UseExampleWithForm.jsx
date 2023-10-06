@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../Modal";
+import Modal from "../lib/Modal";
 
 function UseExampleWithForm() {
     const [isModalOpen, setIsModalOpen] = useState(false);
