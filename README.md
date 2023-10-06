@@ -6,10 +6,7 @@ The Modal component allows you to create customizable modal dialogs for your Rea
 
 - [NodeJS (**version v20.0.0 or higher**)](https://nodejs.org/en/)
 - [npm (**v9.6.4 or higher**)](https://www.npmjs.com/)
-- [eslint (**version 1.4.0 or higher**)](https://eslint.org/)
-- [vite (**version ^4.3.2 or higher**)](https://vitejs.dev/)
 - [react (**version ^18.2.0 or higher**)](https://react.dev/)
-- [prop-types (**version ^15.8.1 or higher**)](https://www.npmjs.com/package/prop-types)
 
 ## Installation
 
@@ -25,13 +22,13 @@ You can install this component via npm:
 
 # Include the Modal componentn in your JSX
 
-```<Modal
+```
+<Modal
   closeModal={closeModalFunction}
   maxWidth={number}
   modalBackgroundColor={string}
   iconColor={string}
-  hoveredIconBackgroundColor={string}
->
+  hoveredIconBackgroundColor={string}>
   {/* Content for your modal */}
 </Modal>
 ```
@@ -43,3 +40,4 @@ You can install this component via npm:
 - `modalBackgroundColor`: The background color of the modal.
 - `iconColor`: The color of the close icon.
 - `hoveredIconBackgroundColor`: The background color of the close icon on hover.
+- `modalBackground`: The background color behind the modal (light or dark).

@@ -15,15 +15,16 @@ import Span from './Span';
  * @param {string} [props.modalBackgroundColor] - La couleur de fond de la boîte modale.
  * @param {string} [props.iconColor] - La couleur de l'icône de fermeture.
  * @param {string} [props.hoveredIconBackgroundColor] - La couleur de fond de l'icône lorsque survolée.
+ * @param {string} [props.hoveredIcon] - La couleur de fond derriere la modale (light ou non).
  * @returns {JSX.Element} Le composant Modal rendu.
  */
 
-function Modal({ children, closeModal, maxWidth, modalBackgroundColor, iconColor, hoveredIconBackgroundColor }) {
+function Modal({ children, closeModal, maxWidth, modalBackgroundColor, iconColor, hoveredIconBackgroundColor, modalBackground }) {
 
     return (
         <div className={classes.modal_background}
         style={{
-            backgroundColor: modalBackgroundColor === 'rgb(255,255,255)' ? 'rgb(255,255,255, 0.6)' : 'rgb(0,0,0, 0.7)',
+            backgroundColor: modalBackground === 'light' ? 'rgb(255,255,255, 0.6)' : 'rgb(0,0,0, 0.7)',
         }}>
             <div className={classes.modal}
                 style={{
@@ -53,6 +54,7 @@ Modal.propTypes = {
     closeModal: PropTypes.func,
     maxWidth: PropTypes.number,
     modalBackgroundColor: PropTypes.string,
+    modalBackground: PropTypes.string,
     iconColor: PropTypes.string,
     hoveredIconBackgroundColor: PropTypes.string,
 }
